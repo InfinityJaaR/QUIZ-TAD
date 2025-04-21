@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Incluir Papa Parse sin el atributo integrity -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Botones de Guardar/Cargar progreso en la esquina superior derecha -->
+    <div id="progress-buttons">
+        <button id="save-progress">Guardar progreso</button>
+        <button id="load-progress">Cargar progreso</button>
+        <!-- Input oculto para seleccionar el archivo a cargar -->
+        <input type="file" id="file-input" accept=".json" style="display:none">
+    </div>
+
+    <div class="quiz-container">
+        <div id="quiz"></div>
+    </div>
+    <!-- Cargar script.js después de Papa Parse -->
+    <script src="script.js"></script>
+</body>
+
+</html>

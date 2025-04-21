@@ -1,0 +1,179 @@
+/* styles.css */
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 80px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    padding: 40px;
+}
+
+.quiz-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.option {
+    background-color: #f9f9f9;
+    border: 2px solid #eaeaea;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.option:hover {
+    background-color: #e6f7ff;
+    border-color: #91d5ff;
+}
+
+.option.correct {
+    background-color: #d9f7be;
+    border-color: #b7eb8f;
+    cursor: default;
+}
+
+.option.incorrect {
+    background-color: #fff1f0;
+    border-color: #ffa39e;
+    cursor: default;
+}
+
+.hidden {
+    display: none;
+}
+
+#next-button {
+    display: block;
+    background-color: #1890ff;
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 30px auto 0;
+    transition: background-color 0.3s;
+}
+
+#next-button:hover {
+    background-color: #40a9ff;
+}
+
+#quiz h2 {
+    margin-top: 0;
+}
+
+.completed-message {
+    text-align: center;
+    font-size: 24px;
+    color: #52c41a;
+}
+
+.reps-remaining, .questions-remaining {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilo para la respuesta correcta */
+.correct-answer {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilo para el bloque de Contexto */
+.context-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f4ff;
+    border-left: 4px solid #1890ff;
+    font-size: 16px;
+    color: #333;
+    border-radius: 4px;
+}
+
+/* Estilo para los indicadores de teclas en opciones y botón */
+.key-indicator {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #333;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-right: 10px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+/* Estilo específico para la representación de la barra espaciadora */
+.key-indicator.space {
+    font-family: monospace;
+    padding: 4px 12px;
+}
+
+/* Opcional: Ajustar la alineación del texto dentro de las opciones */
+.option-text {
+    vertical-align: middle;
+}
+
+/* Para el botón "Siguiente", ajustar la distribución del contenido */
+#next-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Separación entre el icono y el texto */
+    background-color: #1890ff;
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 30px auto 0;
+    transition: background-color 0.3s;
+}
+
+#next-button:hover {
+    background-color: #40a9ff;
+}
+
+
+/* Estilos para el contenedor de botones de progreso */
+#progress-buttons {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+}
+
+/* Estilos para los botones de progreso */
+#progress-buttons button {
+    background-color: #1890ff;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#progress-buttons button:hover {
+    background-color: #40a9ff;
+}
